@@ -1,0 +1,54 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Next.js
+.next/
+out/
+next-env.d.ts
+
+# Build output
+dist/
+build/
+
+# Env files
+.env
+.env.local
+.env.*.local
+clients/*/app/.env.local
+
+# Logs
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor/OS
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# Testing
+coverage/
+
+# Vercel
+.vercel/
+
+# TypeScript
+*.tsbuildinfo
+
+# Claude Code — local-only files (per-machine permission overrides,
+# never shared). Everything else under .claude/ is intentionally
+# committed so a clone/template gets the full setup with no install step.
+.claude/settings.local.json
+
+# Defensive: explicitly keep the shared Claude Code setup tracked, in
+# case a future blanket ignore rule (e.g. a dotfile pattern) gets added
+# above without someone checking it against this section first.
+!.claude/
+!.claude/agents/
+!.claude/skills/
+!.claude/commands/
+!.claude/rules/
+!.claude/settings.json
